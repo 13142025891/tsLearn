@@ -1,0 +1,54 @@
+@bg-color: #b7d4a8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+
+  width: 360px;
+  height: 420px;
+  background-color: @bg-color;
+  margin: 100px auto;
+  border: 10px black solid;
+  border-radius: 20px;
+
+}
+
+#stage {
+  width: 304px;
+  height: 304px;
+  border: 2px black solid;
+  margin: 20px auto;
+  position: relative;
+
+  #snake {
+    &>div {
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      border: 1px @bg-color solid;
+      position: absolute;
+    }
+  }
+
+  #food {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border: 1px @bg-color solid;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+  }
+}
+
+#score {
+  width: 304px;
+  height: 304px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}

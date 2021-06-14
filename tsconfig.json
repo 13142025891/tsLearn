@@ -1,0 +1,48 @@
+{
+  //哪些文件需要编译
+  "include": [
+    "./src/**/*"
+  ],
+  //不包含
+  "exclude": [],
+  //"extends": "",
+  //指定哪些文件编译
+  //"files": [], //["./src/index.ts"],
+  "compilerOptions": {
+    //目标：ts 编译后的js版本
+    "target": "ES2015",
+    "module": "es2015",
+    // 项目需要使用的库，一般情况下不用，如果node后端可能要配置
+    //"lib": [],
+    //"outDir": "./dist",
+    //将代码合并到一个文件
+    //"outFile": ""
+    //是否编译JS 文件
+    "allowJs": false,
+    //是否检查js 代码符合规范
+    "checkJs": false,
+
+    //是否删除注释
+    "removeComments": false,
+    //不生成编译后的文件
+    "noEmit": false,
+    //当有错误时 不生成编译文件
+    "noEmitOnError": true,
+
+    //开启严格模式，为true 相关的全开，单独关闭个别
+    "strict": false,
+    // 严格模式
+    "alwaysStrict": false,
+
+    //不允许隐式的any
+    "noImplicitAny": false,
+
+    //不允许隐式的this
+    "noImplicitThis": false,
+
+    //严格检查null
+    "strictNullChecks": true,
+
+
+  }
+}
